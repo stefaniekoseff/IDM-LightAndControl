@@ -1,6 +1,6 @@
  /// Alternating blink pattern (2 on / 2 off) 4 white LEDs x4 then xfade up/down 2 pinkOrange RGB LEDs //
 // rinse & repeat // 
-// help with the for loop from Moreware blog
+// ideas for the for-loop from Moreware blog
 // https://www.moreware.org/wp/blog/2020/04/02/arduino-ide-rgb-led-for-while-do-while-loops-7/
 
 
@@ -12,7 +12,6 @@ const int white4 = 8;
 const int green = 10;
 const int pink = 9;
  
-
 int ledState = LOW;
 int ledStateReverse = HIGH;
 
@@ -32,8 +31,6 @@ void setup() {
   pinMode(white4, OUTPUT);
   pinMode(green, OUTPUT);
   pinMode(pink, OUTPUT);
-
-
 }
 
 void loop() {
@@ -68,7 +65,7 @@ if (count <= 4) {
 }
 
 if (count == 4) {
-      digitalWrite(white1, LOW);
+     digitalWrite(white1, LOW);
     digitalWrite(white4, LOW);
     digitalWrite(white2, LOW);
     digitalWrite(white3, LOW); 
@@ -82,8 +79,6 @@ if (count >=5 && count <6) {
   digitalWrite(pink, LOW);
   digitalWrite(green, LOW);
 }
-
-
  
 void whiteBlink() {
 
@@ -92,7 +87,6 @@ void whiteBlink() {
     digitalWrite(white2, ledStateReverse);
     digitalWrite(white3, ledStateReverse);
 }
-
 
 void greenPinkFade() {
   digitalWrite(pink, HIGH);
@@ -107,5 +101,5 @@ void greenPinkFade() {
   analogWrite(pink, -i);
  delay(10);
  }  
- }
+}
  
