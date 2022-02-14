@@ -62,12 +62,12 @@ void loop() {
     }
   }
 
-if (count <= 5) {
+ if (count <= 5) {
   whiteBlink();
 }
 
 if (count == 5) {
-      digitalWrite(white1, LOW);
+    digitalWrite(white1, LOW);
     digitalWrite(white4, LOW);
     digitalWrite(white2, LOW);
     digitalWrite(white3, LOW); 
@@ -85,7 +85,6 @@ if (count >=6 && count <7) {
 
 
 void whiteBlink() {
-
     digitalWrite(white1, ledState);
     digitalWrite(white4, ledState);
     digitalWrite(white2, ledStateReverse);
@@ -108,5 +107,4 @@ int blue = 255;
       analogWrite(color1B, i);
       delay(100);
   }
-
 }
