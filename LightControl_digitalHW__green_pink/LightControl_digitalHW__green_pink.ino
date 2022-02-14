@@ -1,4 +1,4 @@
- /// Alternating blink pattern (2 on / 2 off) 4 white LEDs x4 then xfade up/down 2 pinkOrange RGB LEDs //
+ /// Alternating blink pattern (2 on / 2 off) 4 white LEDs x4 then xfade up/down 1 pink and 1 green LED //
 // rinse & repeat // 
 // ideas for the for-loop from Moreware blog
 // https://www.moreware.org/wp/blog/2020/04/02/arduino-ide-rgb-led-for-while-do-while-loops-7/
